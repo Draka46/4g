@@ -15,7 +15,6 @@ let table n (len_array : _ array) circ_omk : string =
     
     for i = 1 to n do
         s <- s + "  "
-        for j = 1 to 3 do
         let len = len_array.[i].ToString()
         let omkS = circ_omk.ToString()
         s <- s + (prnt_spaces spaces_max i) + i.ToString() + (prnt_spaces spaces_max len) + len + (prnt_spaces spaces_max omkS) + omkS
